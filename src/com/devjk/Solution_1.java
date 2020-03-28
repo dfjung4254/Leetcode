@@ -8,7 +8,7 @@ package com.devjk;
     You may assume that each input would have exactly one solution, and you may not use the same element twice.
 
  */
-public class Solution {
+public class Solution_1 {
 
     public int[] twoSum(int[] nums, int target) {
 
