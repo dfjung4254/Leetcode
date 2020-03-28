@@ -1,8 +1,5 @@
 package com.devjk;
 
-import java.awt.geom.Arc2D;
-import java.util.List;
-
 /*
 
     LeetCode Problem Solving
@@ -43,5 +40,17 @@ public class Solution_2 {
         }
 
         return ans;
+    }
+}
+
+/*
+ * Definition for singly-linked list.
+ */
+class ListNode {
+    int val;
+    ListNode next;
+
+    ListNode(int x) {
+        val = x;
     }
 }

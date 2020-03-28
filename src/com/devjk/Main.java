@@ -8,39 +8,15 @@ package com.devjk;
  */
 public class Main {
 
-    Solution_2 sol;
-
     public static void main(String[] args) {
 
-        Solution_2 sol = new Solution_2();
-
-        ListNode l1 = new ListNode(9);
-        ListNode l2 = new ListNode(1);
-        l2.next = new ListNode(9);
-        l2.next.next = new ListNode(9);
-        l2.next.next.next = new ListNode(9);
-        l2.next.next.next.next = new ListNode(9);
-        l2.next.next.next.next.next = new ListNode(9);
-        l2.next.next.next.next.next.next = new ListNode(9);
-        l2.next.next.next.next.next.next.next = new ListNode(9);
-        l2.next.next.next.next.next.next.next.next = new ListNode(9);
-        l2.next.next.next.next.next.next.next.next.next = new ListNode(9);
-        ListNode ans = sol.addTwoNumbers(l1, l2);
-
-        //System.out.println(ans.val);
+        Solution_3 sol1 = new Solution_3();
+        Solution_3 sol2 = new Solution_3();
+        Solution_3 sol3 = new Solution_3();
+        System.out.println(sol1.lengthOfLongestSubstring("abcabcbb"));
+        System.out.println(sol2.lengthOfLongestSubstring("bbbbb"));
+        System.out.println(sol3.lengthOfLongestSubstring("pwwkew"));
 
     }
 
-}
-
-/*
- * Definition for singly-linked list.
- */
-class ListNode {
-    int val;
-    ListNode next;
-
-    ListNode(int x) {
-        val = x;
-    }
 }
