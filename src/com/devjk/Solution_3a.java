@@ -3,6 +3,13 @@ package com.devjk;
 import java.util.HashMap;
 import java.util.Map;
 
+/*
+
+    LeetCode Problem Solving
+    3. Longest Substring Without Repeating Characters
+    Given a string, find the length of the longest substring without repeating characters.
+
+ */
 public class Solution_3a {
 
     private int left = 0;
