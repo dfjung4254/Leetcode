@@ -10,9 +10,8 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Solution_3a sol = new Solution_3a();
-        System.out.println(sol.lengthOfLongestSubstring("abcabcbb"));
-
+        Solution_6 sol = new Solution_6();
+        System.out.println(sol.convert("PAYPALISHIRING", 4));
 
     }
 
