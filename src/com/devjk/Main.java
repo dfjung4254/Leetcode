@@ -10,8 +10,8 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Solution_6 sol = new Solution_6();
-        System.out.println(sol.convert("PAYPALISHIRING", 4));
+        Solution_5a sol = new Solution_5a();
+        System.out.println("정답 : " + sol.longestPalindrome("babad"));
 
     }
 
