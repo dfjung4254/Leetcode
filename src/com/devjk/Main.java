@@ -10,8 +10,15 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Solution_5a sol = new Solution_5a();
-        System.out.println("정답 : " + sol.longestPalindrome("babad"));
+        Solution_101 sol = new Solution_101();
+        TreeNode tree = new TreeNode(1);
+        tree.left = new TreeNode(2);
+        tree.right = new TreeNode(2);
+        tree.left.left = new TreeNode(3);
+        tree.left.right = new TreeNode(4);
+        tree.right.left = new TreeNode(4);
+        tree.right.right = new TreeNode(3);
+        sol.isSymmetric(tree);
 
     }
 
