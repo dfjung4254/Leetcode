@@ -1,10 +1,12 @@
 package com.devjk;
 
+import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Queue;
 
 public class Solution_542 {
 
+    private HashMap<String, Boolean> m;
     private int i_size;
     private int j_size;
     private int[][] matrix;
