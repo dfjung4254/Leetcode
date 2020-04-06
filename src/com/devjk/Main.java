@@ -11,8 +11,8 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Line2020_1 sol = new Line2020_1();
-        System.out.println(sol.solution("Hello, world!"));
+        Solution_17 sol = new Solution_17();
+        System.out.println(sol.letterCombinations("23"));
 
     }
 

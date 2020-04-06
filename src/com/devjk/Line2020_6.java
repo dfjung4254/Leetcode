@@ -57,7 +57,7 @@ public class Line2020_6 {
             }
         }
 
-        String[] answer = new String[];
+        String[] answer = new String[1];
         return answer;
     }
 
