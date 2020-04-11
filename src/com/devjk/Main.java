@@ -11,8 +11,8 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Solution_11 sol = new Solution_11();
-        sol.maxArea(new int[]{1,1});
+        Solution_22 sol = new Solution_22();
+        sol.generateParenthesis(3);
 
     }
 
