@@ -28,7 +28,7 @@ public class Solution_39 {
             }
             System.out.print('\n');
             /* end debug*/
-            ans.add(sub_answer);
+            ans.add(new ArrayList<>(sub_answer));
             return;
         }
 
@@ -39,9 +39,9 @@ public class Solution_39 {
 
 
         for(int i = index; i < size; i++){
-            List<Integer> newList = new ArrayList<>(sub_answer);
-            newList.add(candidates[i]);
-            bruteForce(candidates, target, currentSum + candidates[i], i, newList);
+            sub_answer.add(candidates[i]);
+            bruteForce(candidates, target, currentSum + candidates[i], i, sub_answer);
+            sub_answer.remove(sub_answer.size() - 1);
         }
 
     }
