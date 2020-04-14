@@ -11,8 +11,8 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Solution_33 sol = new Solution_33();
-        System.out.println(sol.search(new int[]{4,5,6,7,0,1,2}, 0));
+        Solution_39 sol = new Solution_39();
+        sol.combinationSum(new int[]{2,3,5}, 8);
 
     }
 
