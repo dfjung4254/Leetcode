@@ -1,8 +1,6 @@
 package com.devjk;
 
 
-import java.util.List;
-
 /*
 
     Leetcode Problem Solving
@@ -13,14 +11,9 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Solution_49 sol = new Solution_49();
-        List<List<String>> list = sol.groupAnagrams(new String[]{""});
-        for(List<String> ll : list){
-            for(String str : ll){
-                System.out.print(str + " / ");
-            }
-            System.out.println("");
-        }
+        Solution_45 sol = new Solution_45();
+        System.out.println("answer : " + sol.jump(new int[]{1,2,1,1,1}));
+
 
     }
 
