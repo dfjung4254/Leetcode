@@ -11,8 +11,8 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Solution_134a sol = new Solution_134a();
-        System.out.println("answer : " + sol.canCompleteCircuit(new int[]{1,2,3,4,5}, new int[]{3,4,5,1,2}));
+        Solution_56 sol = new Solution_56();
+        sol.merge(new int[][] {{15, 18}, {15, 16}, {2, 6}, {1, 3}});
 
 
     }
