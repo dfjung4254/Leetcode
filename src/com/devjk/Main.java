@@ -11,9 +11,11 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Solution_56 sol = new Solution_56();
-        sol.merge(new int[][] {{15, 18}, {15, 16}, {2, 6}, {1, 3}});
-
+        Solution_253 sol = new Solution_253();
+        sol.minMeetingRooms(new int[][]{
+                {7, 10},
+                {2, 4}
+        });
 
     }
 
