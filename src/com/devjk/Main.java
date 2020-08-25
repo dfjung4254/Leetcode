@@ -1,8 +1,6 @@
 package com.devjk;
 
 
-import java.util.List;
-
 /*
 
     Leetcode Problem Solving
@@ -13,14 +11,10 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Solution_46 sol = new Solution_46();
-        List<List<Integer>> ans = sol.permute(new int[]{1, 2, 3});
-        for(List<Integer> list : ans){
-            for(Integer num : list){
-                System.out.print(num + " ");
-            }
-            System.out.println();
-        }
+        Solution_42 sol = new Solution_42();
+        sol.trap(new int[]{
+                0,1,0,2,1,0,1,3,2,1,2,1
+        });
 
     }
 
