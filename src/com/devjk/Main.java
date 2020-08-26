@@ -11,9 +11,9 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Solution_42 sol = new Solution_42();
-        sol.trap(new int[]{
-                0,1,0,2,1,0,1,3,2,1,2,1
+        Solution_41 sol = new Solution_41();
+        sol.firstMissingPositive(new int[]{
+                7,8,9,11,12
         });
 
     }
