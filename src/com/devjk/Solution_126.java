@@ -1,61 +1,111 @@
 package com.devjk;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.List;
+import java.util.*;
 
 /*
 
     Solution 126 : Word Ladder II
 
+    sample data : "hot","dot","dog","lot","log","cog"
+
  */
 
 public class Solution_126 {
 
-    private int shortestLength;
+    private int minimumCount = 0;
 
     public List<List<String>> findLadders(String beginWord, String endWord, List<String> wordList) {
 
-        List<List<String>> ans = new ArrayList<>();
-        int size = wordList.size();
-        String[] line = new String[size];
-        line[0] = beginWord;
-        shortestLength = size;
+        List<List<String>> answer = new ArrayList<>();
 
-        dfs(ans, line, 0, endWord, wordList, new HashSet<>(), size);
+        bfs(answer, beginWord, endWord, wordList);
 
-        return ans;
+        printAnswer(answer);
+
+        return answer;
     }
 
-    public void dfs(List<List<String>> ans, String[] line, int index, String targetWord, List<String> wordList, HashSet<String> visited, int size){
-
-        if(index >= size - 1){
-            if(line[size - 1].equals(targetWord)){
-                /* find answer */
-                ans.add(new ArrayList<>(Arrays.asList(line)));
-            }
-            return;
-        }
-
-        String current = line[index];
-        wordList.forEach(nextWord -> {
-            if(!visited.contains(nextWord) && isSimillar(current, nextWord)){
-                visited.add(nextWord);
-                line[index + 1] = nextWord;
-                dfs(ans, line, index + 1, targetWord, wordList, visited, size);
-                visited.remove(nextWord);
-            }
+    private void printAnswer(List<List<String>> answer){
+        answer.forEach(list -> {
+            list.forEach(word -> {
+                System.out.print(word + " ");
+            });
+            System.out.println("");
         });
-
     }
 
-    private boolean allVisited(boolean[] visited){
-        boolean ret = true;
-        for(boolean v : visited){
-            if(!v) ret = false;
+    private void bfs(List<List<String>> answer, String beginWord, String endWord, List<String> wordList){
+
+        Queue<Pair> q = new LinkedList<>();
+        LinkedHashSet<String> hashSet = new LinkedHashSet<>();
+        hashSet.add(beginWord);
+        q.add(new Pair(hashSet, beginWord));
+
+        while(!q.isEmpty()) {
+            Pair currentPair = q.poll();
+            LinkedHashSet<String> currentHashSet = currentPair.getHash();
+            String currentLast = currentPair.getLast();
+
+            //System.out.print(currentLast + " ");
+
+            wordList.forEach(word -> {
+                if (!currentHashSet.contains(word) && isSimilar(currentLast, word)) {
+                    /* 도달했냐? 도달 안했으면 말없이 추가 */
+                    if (word.equals(endWord)) {
+                        int size = currentHashSet.size();
+                        if (minimumCount == 0 || size == minimumCount) {
+                            /* this is answer */
+                            minimumCount = size;
+                            currentHashSet.add(word);
+                            setAnswer(answer, currentHashSet);
+                        }
+                    } else {
+                        LinkedHashSet<String> hash = new LinkedHashSet<>(currentHashSet);
+                        hash.add(word);
+                        q.add(new Pair(hash, word));
+                    }
+                }
+            });
         }
-        return ret;
+    }
+
+    private void setAnswer(List<List<String>> answer, LinkedHashSet<String> hashSet){
+        printLastAnswer(hashSet);
+        answer.add(new ArrayList<>(hashSet));
+    }
+
+    private void printLastAnswer(LinkedHashSet<String> hashSet){
+        hashSet.forEach(word -> {
+            System.out.print(word + " ");
+        });
+        System.out.println("");
+    }
+
+    private class Pair{
+        private LinkedHashSet<String> hash;
+        private String last;
+        public Pair(LinkedHashSet<String> hash, String last){
+            this.hash = hash;
+            this.last = last;
+        }
+        public void setHash(LinkedHashSet<String> hash) {this.hash = hash;}
+        public LinkedHashSet<String> getHash() {return this.hash;}
+        public void setLast(String last) {this.last = last;}
+        public String getLast() {return this.last;}
+    }
+
+    private boolean isSimilar(String source, String target){
+        int diffCount = 0;
+        int size = source.length();
+        for(int i = 0; i < size; i++){
+            if(source.charAt(i) != target.charAt(i)){
+                diffCount++;
+            }
+        }
+        if(diffCount == 1){
+            return true;
+        }
+        return false;
     }
 
 }
