@@ -31,13 +31,22 @@ public class Solution_138 {
         
         while(sNode != null){
 
-            sNode.next = hashMap.get(sNode.next.hashCode());
-            sNode.random = hashMap.get(sNode.random.hashCode());
+            if(sNode.next != null){
+                sNode.next = hashMap.get(sNode.next.hashCode());
+            }
+
+            if(sNode.random != null){
+                sNode.random = hashMap.get(sNode.random.hashCode());
+            }
 
             sNode = sNode.next;
         }
 
-        return hashMap.get(head.hashCode());
+        if(head != null){
+            return hashMap.get(head.hashCode());
+        }
+
+        return null;
     }
 
     class Node {

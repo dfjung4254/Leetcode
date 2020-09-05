@@ -1,5 +1,7 @@
 package com.devjk;
 
+import java.util.List;
+
 /*
 
     Leetcode Problem Solving
@@ -10,13 +12,11 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Solution_773 sol = new Solution_773();
-        int answer = sol.slidingPuzzle(new int[][]{
-                {3,2,4},
-                {1,5,0}
-        });
-
-        System.out.println(answer);
+        Solution_301 sol = new Solution_301();
+        List<String> ans = sol.removeInvalidParentheses("()())()");
+        for (String str : ans) {
+            System.out.println(str);
+        }
 
     }
 
