@@ -1,7 +1,5 @@
 package com.devjk;
 
-import java.util.List;
-
 /*
 
     Leetcode Problem Solving
@@ -12,11 +10,11 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Solution_301 sol = new Solution_301();
-        List<String> ans = sol.removeInvalidParentheses("()())()");
-        for (String str : ans) {
-            System.out.println(str);
-        }
+        Solution_210 sol = new Solution_210();
+        sol.findOrder(3, new int[][]{
+            {1,0},
+            {2,1}
+        });
 
     }
 
