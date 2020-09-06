@@ -1,6 +1,8 @@
 package com.devjk;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Queue;
 
 public class Solution_210 {
 
@@ -14,6 +16,10 @@ public class Solution_210 {
         for(int i = 0; i < ret.length; i++){
             ret[i] = answer.get(i);
             System.out.println(ret[i]);
+        }
+
+        if(answer.size() != numCourses){
+            return new int[0];
         }
 
         return ret;
@@ -38,10 +44,31 @@ public class Solution_210 {
             pairs[prr[1]].next.add(prr[0]);
         }
 
+        Queue<Pair> q = new LinkedList<>();
+        for(Pair pair : pairs){
+            if(pair.inDegree == 0){
+                q.offer(pair);
+            }
+        }
+        while(!q.isEmpty()){
+            Pair curPair = q.poll();
+
+            answer.add(curPair.index);
+
+            for(int nextIndex : curPair.next){
+                if(--pairs[nextIndex].inDegree == 0){
+                    /* 다음 순서 */
+                    q.offer(pairs[nextIndex]);
+                }
+            }
+
+        }
+
+
 
     }
 
-    private class Pair implements Comparable<Pair>{
+    private class Pair {
         int index;
         int inDegree;
         ArrayList<Integer> next;
@@ -49,18 +76,6 @@ public class Solution_210 {
             this.index = index;
             this.inDegree = inDegree;
             this.next = new ArrayList<>();
-        }
-
-        @Override
-        public int compareTo(Pair o) {
-            if(this.inDegree > o.inDegree){
-                return 1;
-            }
-            return -1;
-        }
-
-        public void print(){
-            System.out.println(index + " / " + inDegree + " / " + next);
         }
 
     }
