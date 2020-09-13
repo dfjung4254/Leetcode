@@ -1,5 +1,7 @@
 package com.devjk.kakaoInterview2021_1;
 
+import java.util.ArrayList;
+
 public class kakao2021_1_1_3_1 {
 
     private ArrayList<Integer>[][][][] chain = new ArrayList[4][3][3][3];

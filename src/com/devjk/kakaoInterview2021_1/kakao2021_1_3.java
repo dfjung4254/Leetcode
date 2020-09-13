@@ -47,6 +47,7 @@ public class kakao2021_1_3 {
 
 
         /* do query */
+        int[] answer = {};
         answer = new int[query.length];
         int idx = 0;
         for(String cmd : query){
