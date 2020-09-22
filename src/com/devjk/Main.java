@@ -11,12 +11,11 @@ import java.io.IOException;
 
  */
 public class Main {
-    
+
     public static void main(String[] args) throws IOException {
 
         line2020_3 sol = new line2020_3();
         sol.solution(10000);
-
 
     }
 
