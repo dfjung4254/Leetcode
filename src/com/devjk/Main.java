@@ -1,6 +1,6 @@
 package com.devjk;
 
-import com.devjk.lineInterview2020_1.line2020_3;
+import programmers.MaximumExpression;
 
 import java.io.IOException;
 
@@ -14,8 +14,8 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
 
-        line2020_3 sol = new line2020_3();
-        sol.solution(10000);
+        MaximumExpression sol = new MaximumExpression();
+        sol.solution("100-200*300-500+20");
 
     }
 
