@@ -2,7 +2,7 @@ package programmers;
 
 import java.util.PriorityQueue;
 
-public class MoreHot {
+public class MoreHot_heap {
 
     public int solution(int[] scoville, int K) {
         int answer = 0;

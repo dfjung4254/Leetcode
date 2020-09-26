@@ -3,7 +3,7 @@ package programmers;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class Network {
+public class Network_bfs {
 
     public int solution(int n, int[][] computers) {
         int answer = 0;

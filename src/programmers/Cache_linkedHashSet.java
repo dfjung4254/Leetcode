@@ -3,7 +3,7 @@ package programmers;
 import java.util.Iterator;
 import java.util.LinkedHashSet;
 
-public class Cache {
+public class Cache_linkedHashSet {
 
     public int solution(int cacheSize, String[] cities) {
         int answer = 0;

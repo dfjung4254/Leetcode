@@ -2,7 +2,7 @@ package programmers;
 
 import java.util.*;
 
-public class MaximumExpression {
+public class MaximumExpression_stackCalculator {
 
     public long solution(String expression) {
         long answer = 0;

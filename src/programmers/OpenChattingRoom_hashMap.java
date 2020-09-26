@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class OpenChattingRoom {
+public class OpenChattingRoom_hashMap {
 
     public String[] solution(String[] record) {
         List<String> list = new ArrayList<>();
