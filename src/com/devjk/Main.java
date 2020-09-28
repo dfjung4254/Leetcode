@@ -1,6 +1,6 @@
 package com.devjk;
 
-import programmers.BadUser;
+import com.devjk.naverInterview2020.naver2020_1;
 
 import java.io.IOException;
 
@@ -14,12 +14,8 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
 
-        BadUser sol = new BadUser();
-        sol.solution(new String[]{
-                "frodo", "fradi", "crodo", "abc123", "frodoc"
-        }, new String[]{
-                "*rodo", "*rodo", "******"
-        });
+        naver2020_1 sol = new naver2020_1();
+
 
     }
 
