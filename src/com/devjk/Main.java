@@ -1,8 +1,9 @@
 package com.devjk;
 
-import com.devjk.naverInterview2020.naver2020_1;
+import programmers.FailRate;
 
 import java.io.IOException;
+import java.util.Arrays;
 
 /*
 
@@ -14,8 +15,12 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
 
-        naver2020_1 sol = new naver2020_1();
+        FailRate sol = new FailRate();
+        int[] ans = sol.solution(5, new int[]{
+                2, 1, 2, 6, 2, 4, 3, 3
+        });
 
+        System.out.println(Arrays.toString(ans));
 
     }
 
