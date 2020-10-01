@@ -20,10 +20,10 @@ public class WordPuzzle {
             dp[i] = targetSize;
         }
         for(int i = 1; i < dp.length; i++){
-            int min = 0;
-            for(int j = 0; j < i; j++){
-                String subTarget = target.substring(j, i);
-                if(hash.contains(subTarget)){
+            StringBuilder sb = new StringBuilder();
+            for(int j = i - 1; j >= i - 5 && j >= 0; j--){
+                sb.insert(0, target.charAt(j));
+                if(hash.contains(sb.toString())){
                     if(dp[i] > dp[j] + 1){
                         dp[i] = dp[j] + 1;
                     }
