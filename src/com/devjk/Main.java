@@ -1,6 +1,6 @@
 package com.devjk;
 
-import programmers.BlockGame_simulation;
+import programmers.MovingBlock_bfs_expert;
 
 import java.io.IOException;
 
@@ -14,18 +14,9 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
 
-        BlockGame_simulation sol = new BlockGame_simulation();
-        int ans = sol.solution(new int[][] {
-                        {0,0,0,0,0,0,0,0,0,0},
-                        {0,0,0,0,0,0,0,0,0,0},
-                        {0,0,0,0,0,0,0,0,0,0},
-                        {0,0,0,0,0,0,0,0,0,0},
-                        {0,0,0,0,0,0,4,0,0,0},
-                        {0,0,0,0,0,4,4,0,0,0},
-                        {0,0,0,0,3,0,4,0,0,0},
-                        {0,0,0,2,3,0,0,0,5,5},
-                        {1,2,2,2,3,3,0,0,0,5},
-                        {1,1,1,0,0,0,0,0,0,5}
+        MovingBlock_bfs_expert sol = new MovingBlock_bfs_expert();
+        int ans = sol.solution(new int[][]{
+                {0, 0, 0, 1, 1},{0, 0, 0, 1, 0},{0, 1, 0, 1, 1},{1, 1, 0, 0, 1},{0, 0, 0, 0, 0}
         });
 
         System.out.println("answer : " + ans);
