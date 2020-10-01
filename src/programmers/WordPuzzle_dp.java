@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
-public class WordPuzzle {
+public class WordPuzzle_dp {
 
     private int answer;
 

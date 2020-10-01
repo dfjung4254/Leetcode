@@ -3,7 +3,7 @@ package programmers;
 import java.util.ArrayList;
 import java.util.List;
 
-public class FailRate {
+public class FailRate_simulate {
 
     public int[] solution(int n, int[] stages) {
         int[] answer = new int[n];

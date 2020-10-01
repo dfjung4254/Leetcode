@@ -3,7 +3,7 @@ package programmers;
 import java.util.HashMap;
 import java.util.Map;
 
-public class HotelRoomChoice {
+public class HotelRoomChoice_unionFind {
 
     public long[] solution(long k, long[] room_number) {
         long[] answer = new long[room_number.length];

@@ -3,7 +3,7 @@ package programmers;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class GameMapShortestPath {
+public class GameMapShortestPath_bfs {
 
     private final int[] DI = {0, 1, 0, -1};
     private final int[] DJ = {1, 0, -1, 0};

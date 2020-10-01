@@ -2,7 +2,7 @@ package programmers;
 
 import java.util.Stack;
 
-public class RemovePair {
+public class RemovePair_stack {
 
     public int solution(String s)
     {
