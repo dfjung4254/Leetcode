@@ -1,6 +1,6 @@
 package com.devjk;
 
-import programmers.MovingBlock_bfs_expert;
+import programmers.LittleFriendsSaCheonSung_simulate_advanced;
 
 import java.io.IOException;
 
@@ -14,12 +14,11 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
 
-        MovingBlock_bfs_expert sol = new MovingBlock_bfs_expert();
-        int ans = sol.solution(new int[][]{
-                {0, 0, 0, 1, 1},{0, 0, 0, 1, 0},{0, 1, 0, 1, 1},{1, 1, 0, 0, 1},{0, 0, 0, 0, 0}
+        LittleFriendsSaCheonSung_simulate_advanced sol = new LittleFriendsSaCheonSung_simulate_advanced();
+        String ans = sol.solution(4, 4, new String[]{
+                ".ZI.", "M.**", "MZU.", ".IU."
         });
-
-        System.out.println("answer : " + ans);
+        System.out.println("ans : " + ans);
 
     }
 
