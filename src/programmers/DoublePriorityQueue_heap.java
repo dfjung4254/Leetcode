@@ -1,8 +1,11 @@
 package programmers;
 
-import java.util.*;
+import java.util.Comparator;
+import java.util.HashSet;
+import java.util.PriorityQueue;
+import java.util.Set;
 
-public class DoublePriorityQueue {
+public class DoublePriorityQueue_heap {
 
     public int[] solution(String[] operations) {
         int[] answer = new int[2];

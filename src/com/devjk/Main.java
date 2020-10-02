@@ -1,7 +1,6 @@
 package com.devjk;
 
-import programmers.DoublePriorityQueue;
-import programmers.LittleFriendsSaCheonSung_simulate_advanced;
+import programmers.DoublePriorityQueue_heap;
 
 import java.io.IOException;
 import java.util.Arrays;
@@ -16,7 +15,7 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
 
-        DoublePriorityQueue sol = new DoublePriorityQueue();
+        DoublePriorityQueue_heap sol = new DoublePriorityQueue_heap();
         int[] ans = sol.solution(new String[]{
                 "I 7","I 5","I -5","D -1"
         });
