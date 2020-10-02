@@ -1,8 +1,10 @@
 package com.devjk;
 
+import programmers.DoublePriorityQueue;
 import programmers.LittleFriendsSaCheonSung_simulate_advanced;
 
 import java.io.IOException;
+import java.util.Arrays;
 
 /*
 
@@ -14,11 +16,11 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
 
-        LittleFriendsSaCheonSung_simulate_advanced sol = new LittleFriendsSaCheonSung_simulate_advanced();
-        String ans = sol.solution(4, 4, new String[]{
-                ".ZI.", "M.**", "MZU.", ".IU."
+        DoublePriorityQueue sol = new DoublePriorityQueue();
+        int[] ans = sol.solution(new String[]{
+                "I 7","I 5","I -5","D -1"
         });
-        System.out.println("ans : " + ans);
+        System.out.println(Arrays.toString(ans));
 
     }
 
