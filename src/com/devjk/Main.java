@@ -1,6 +1,6 @@
 package com.devjk;
 
-import programmers.DoublePriorityQueue_heap;
+import programmers.PillarAndBo;
 
 import java.io.IOException;
 import java.util.Arrays;
@@ -15,11 +15,15 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
 
-        DoublePriorityQueue_heap sol = new DoublePriorityQueue_heap();
-        int[] ans = sol.solution(new String[]{
-                "I 7","I 5","I -5","D -1"
+        PillarAndBo sol = new PillarAndBo();
+        int[][] ans = sol.solution(5, new int[][]{
+                {0,0,0,1},{2,0,0,1},{4,0,0,1},{0,1,1,1},{1,1,1,1},{2,1,1,1},{3,1,1,1},{2,0,0,0},{1,1,1,0},{2,2,0,1}
         });
-        System.out.println(Arrays.toString(ans));
+
+        for (int[] an : ans) {
+            System.out.println(Arrays.toString(an));
+        }
+
 
     }
 
