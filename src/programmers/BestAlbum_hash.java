@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class BestAlbum {
+public class BestAlbum_hash {
 
     public int[] solution(String[] genres, int[] plays) {
         int[] answer = {};

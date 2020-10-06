@@ -1,6 +1,6 @@
 package programmers;
 
-public class SchoolRoad {
+public class SchoolRoad_dp {
 
     public int solution(int m, int n, int[][] puddles) {
 
