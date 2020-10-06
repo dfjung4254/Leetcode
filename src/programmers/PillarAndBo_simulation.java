@@ -3,7 +3,7 @@ package programmers;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PillarAndBo {
+public class PillarAndBo_simulation {
 
     private final int ORIGIN = 0;
     private final int AWAY = 1;

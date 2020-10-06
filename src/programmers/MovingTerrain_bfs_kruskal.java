@@ -2,7 +2,7 @@ package programmers;
 
 import java.util.*;
 
-public class MovingTerrain {
+public class MovingTerrain_bfs_kruskal {
 
     private final int[] DI = {0, 1, 0, -1};
     private final int[] DJ = {1, 0, -1, 0};
