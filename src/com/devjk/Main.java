@@ -1,6 +1,6 @@
 package com.devjk;
 
-import programmers.OuterWallCheck_bruteForce;
+import programmers.HanoiTower;
 
 import java.io.IOException;
 
@@ -14,14 +14,8 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
 
-        OuterWallCheck_bruteForce sol = new OuterWallCheck_bruteForce();
-        int ans = sol.solution(12, new int[]{
-                1, 5, 6, 10
-        }, new int[]{
-                1, 2, 3, 4
-        });
-
-        System.out.println("ans : " + ans);
+        HanoiTower sol = new HanoiTower();
+        sol.solution(3);
 
     }
 
