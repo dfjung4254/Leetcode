@@ -1,9 +1,8 @@
 package com.devjk;
 
-import programmers.PillarAndBo_simulation;
+import programmers.OuterWallCheck_bruteForce;
 
 import java.io.IOException;
-import java.util.Arrays;
 
 /*
 
@@ -15,15 +14,14 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
 
-        PillarAndBo_simulation sol = new PillarAndBo_simulation();
-        int[][] ans = sol.solution(5, new int[][]{
-                {0,0,0,1},{2,0,0,1},{4,0,0,1},{0,1,1,1},{1,1,1,1},{2,1,1,1},{3,1,1,1},{2,0,0,0},{1,1,1,0},{2,2,0,1}
+        OuterWallCheck_bruteForce sol = new OuterWallCheck_bruteForce();
+        int ans = sol.solution(12, new int[]{
+                1, 5, 6, 10
+        }, new int[]{
+                1, 2, 3, 4
         });
 
-        for (int[] an : ans) {
-            System.out.println(Arrays.toString(an));
-        }
-
+        System.out.println("ans : " + ans);
 
     }
 
