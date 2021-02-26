@@ -1,9 +1,5 @@
 package com.devjk;
 
-import programmers.HanoiTower;
-
-import java.io.IOException;
-
 /*
 
     Leetcode Problem Solving
@@ -12,10 +8,13 @@ import java.io.IOException;
  */
 public class Main {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
 
-        HanoiTower sol = new HanoiTower();
-        sol.solution(3);
+        Solution_64_1 sol = new Solution_64_1();
+        int ans = sol.minPathSum(new int[][] {
+                {1,2,3}, {4,5,6}
+        });
+        System.out.println(ans);
 
     }
 
