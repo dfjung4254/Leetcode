@@ -2,28 +2,6 @@ package com.devjk.challenge.march2021;
 
 public class Week3_ConstructBinaryTreeFromString {
 
-  /**
-   * Definition for a binary tree node.
-   * public class TreeNode {
-   *     int val;
-   *     TreeNode left;
-   *     TreeNode right;
-   *     TreeNode() {}
-   *     TreeNode(int val) { this.val = val; }
-   *     TreeNode(int val, TreeNode left, TreeNode right) {
-   *         this.val = val;
-   *         this.left = left;
-   *         this.right = right;
-   *     }
-   * }
-   */
-
-  /**
-   *
-   *     Input: s = "-4(2(3)(1))(6(5)(7))"
-   *     Output: [-4,2,6,3,1,5,7]
-   *
-   */
   public TreeNode str2tree(String s) {
 
     TreeNode ans = new TreeNode();
@@ -78,10 +56,6 @@ public class Week3_ConstructBinaryTreeFromString {
     }
     return ret;
   }
-
-
-
-
 
   private class TreeNode {
     int val;
