@@ -1,5 +1,7 @@
 package com.devjk;
 
+import com.devjk.kakaoMakers2021.Kakao2021_2;
+
 /*
 
     Leetcode Problem Solving
@@ -10,11 +12,10 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Solution_64_1 sol = new Solution_64_1();
-        int ans = sol.minPathSum(new int[][] {
-                {1,2,3}, {4,5,6}
-        });
-        System.out.println(ans);
+        Kakao2021_2 sol = new Kakao2021_2();
+        sol.solution(new int[][]{
+
+        }, 0);
 
     }
 
