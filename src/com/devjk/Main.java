@@ -10,12 +10,13 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Solution_105 sol = new Solution_105();
-        sol.buildTree(new int[] {
-                3,9,20,15,7
-        }, new int[] {
-                9,3,15,20,7
-        });
+        Solution_102 sol = new Solution_102();
+        Solution_102.TreeNode node = new Solution_102.TreeNode(3);
+        node.left = new Solution_102.TreeNode(9);
+        node.right = new Solution_102.TreeNode(20);
+        node.right.left = new Solution_102.TreeNode(15);
+        node.right.right = new Solution_102.TreeNode(7);
+        System.out.println(sol.levelOrder(node).toString());
 
     }
 
