@@ -10,8 +10,12 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Solution_32 sol = new Solution_32();
-        System.out.println(sol.longestValidParentheses(")()())"));
+        Solution_152 sol = new Solution_152();
+        int ans = sol.maxProduct(new int[] {
+                -4, -3, -2
+        });
+
+        System.out.println(ans);
 
     }
 
