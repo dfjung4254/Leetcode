@@ -1,5 +1,8 @@
 package com.devjk;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /*
 
     Leetcode Problem Solving
@@ -10,12 +13,13 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Solution_152 sol = new Solution_152();
-        int ans = sol.maxProduct(new int[] {
-                -4, -3, -2
+        Solution_174 sol = new Solution_174();
+        sol.calculateMinimumHP(new int[][] {
+                {1,-3,3},{0,-2,0},{-3,-3,-3}
         });
 
-        System.out.println(ans);
+        List<String> list = new ArrayList<>();
+
 
     }
 
