@@ -1,7 +1,6 @@
 package com.devjk;
 
-import java.util.ArrayList;
-import java.util.List;
+import com.devjk.interviews.naverWebtoon2021_1.Solution3;
 
 /*
 
@@ -13,13 +12,8 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Solution_174 sol = new Solution_174();
-        sol.calculateMinimumHP(new int[][] {
-                {1,-3,3},{0,-2,0},{-3,-3,-3}
-        });
-
-        List<String> list = new ArrayList<>();
-
+        Solution3 sol = new Solution3();
+        sol.solution("aaaaa", "a");
 
     }
 
